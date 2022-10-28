@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+        
+    <meta charset="UTF-8">
+        
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@200;300;600&display=swap" rel="stylesheet">
+        <title>Encodificar</title>
+</head>
+
+<body>
+    <header>
+        <h1>CODIFICADOR BASE 64 E CIFRA DE CÉSAR</h1>
+    </header>
+
+    <div class="main">
+
+        <form name="form">
+
+            <div class="menu">
+                <h4>Selecione uma opção:</h4>
+                <br>
+
+                <div class="form-select form-select-sm" id="sel" aria-label=".form-select-sm example">
+                    <fieldset>
+                        <label class="form-check-label">base64
+                            <input type="radio" value="base64" id="b64" name="botaoo" />
+                        </label>
+                        <label>cifra de cesar
+                            <input type="radio" value="cifradecesar" id="cesar" name="botaoo" />
+                        </label>
+                    </fieldset>
+                </div>
+
+            </div>
+            <br>
+            <div class="incremente">
+                <h4>Quantidade de passos</h4>
+                <input id="incremento" type="number" min="1" max="26" value="1">
+            </div>
+            <br>
+            <div class="campo">
+                <textarea name="mensagem" class="a" id="mensagem" placeholder="Digite aqui sua mensagem"
+                    required=""></textarea>
+                <textarea name="resultado" id="resultado" class="a" placeholder="Mensagem criptografada"
+                    readonly></textarea>
+            </div>
+            <br>
+            <div class="botoes">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="botao" id="codificar" checked>
+                    <label for="codificar" class="form-check-label">
+                        Codificar
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="botao" id="decodificar">
+                    <label for="decodificar" class="form-check-label">
+                        Decodificar
+                    </label>
+                </div>
+            </div>
+            <br>
+
+            <div class="alinhar">
+                <center><button id="btn" nome="btn">Codificar <br> Mensagem</button></center>
+            </div>
+        </form>
+
+
+
+    </div>
+    <footer>
+            <div class="icons">
+                   <a href="https://github.com/ka-lucas">
+                <ion-icon name="logo-github"></ion-icon>
+            </a>
+                </div>
+          </footer>
+
+
+    <script src="codigo.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
